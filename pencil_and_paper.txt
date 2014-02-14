@@ -1,0 +1,154 @@
+Answers to Pen- and Paper Exercises, Unit 5, Part 1, CSCI E-10b
+
+Anna Ntenta, anna.ntenta@gmail.com
+----------------------------------------------------
+
+Question 1:
+Answer: The values of the elements in array a1 are [26, 19, 14, 11, 10]
+
+----------------------------------------------------
+
+Question 2:
+
+/** DigitSum.java
+ *  Unit 5.1.2
+ *
+ *  @author:  Anna Ntenta
+ *  @version: Last Modified February 6, 2014
+ */
+
+import java.util.*;
+
+class DigitSum 
+{
+	public static int DigitSum(int n)
+	{
+		// base case
+		if (n < 10)
+		{
+			return n; 	
+		}
+		// recursive case
+		else			
+		{	
+    		int digit = n % 10; // digit gets the last number in the int
+    		return digit + DigitSum(n / 10); 
+		}
+	}
+
+	public static void main (String [] args)
+	{
+		System.out.println(DigitSum(3456));
+	}
+
+}
+
+----------------------------------------------------
+
+Question 3:
+
+** Prob3.java
+ *  unit 5.1.3
+ *
+ *  @author:  Anna Ntenta
+ *  @version: Last Modified January 29, 2014
+ */
+
+import java.util.*;
+
+enum Months { JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG,
+ SEP, OCT, NOV, DEC} ;
+
+class Prob3
+{
+ 	public static int daysInMonth (Months m)
+ 	{
+ 		int numDays = 0;
+ 		switch (m)
+ 		{ 
+ 		case JAN: case MAR: case MAY:
+            case JUL: case AUG: case OCT:
+            case DEC: 
+            numDays = 31;
+            break;
+
+        case APR: case JUN:
+            case SEP: case NOV: 
+            numDays = 30;
+            break;
+
+        case FEB:
+        	numDays = 28;
+        	break;
+
+        default:
+                System.out.println("Invalid month.");
+                break;
+ 		}	
+ 		return numDays;
+ 	}
+ 
+ public static void main (String [] args)
+ 	{
+ 		for (Months m : Months.values() )
+ 		{
+ 			System.out.println (m + " has " + 
+ 			daysInMonth(m) + " days!");
+ 		}
+ 	}
+}
+
+----------------------------------------------------
+
+Question 4:
+
+i)
+
+/** Power.java
+ *  unit 5.1.4
+ *
+ *  @author:  Anna Ntenta
+ *  @version: Last Modified February 6, 2014
+ */
+
+import java.util.*;
+
+class Power 
+{
+	public static double power (double x, int n) 
+	{
+		if (n == 0)			// base case
+		{
+			return 1.0;
+		}
+		else if (n > 0)
+		{
+			if (n % 2 == 0)	// if n is even
+			{
+				return power(x * x, n / 2);
+			}
+			else
+			{
+				return x * power(x, n - 1);
+			}
+		}
+		else
+		{
+			return 1.0 / power(x, -n);
+		}
+	}
+
+	public static void main (String [] args)
+	{
+		System.out.println(power(1, 1023));
+	}
+}
+
+
+ii) 20 calls (including the base case)
+
+iii) 12 calls (including the base case)
+
+
+
+
