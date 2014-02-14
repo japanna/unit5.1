@@ -1,5 +1,5 @@
 /** Palindrome.java
- *  unit 5.1.7
+ *  unit 5.1.5
  *  
  *  @author:  Anna Ntenta
  *  @version: Last Modified February 14, 2014
