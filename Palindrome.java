@@ -90,7 +90,7 @@ public static void main (String [] args)
 			// Check that the input contains at least one letter
 			if (counter == 0) {
 				// if no letters in input, print error msg
-				System.out.println("Your sentence contains no letters. Please try again.");
+				System.out.println("\nYour sentence contains no letters. Please try again.\n");
 				return;
 			} 
 
