@@ -1,10 +1,14 @@
-/** LowestGrade.java
- *  unit 5.1.6
- *  
- *  @author:  Anna Ntenta
- *  @version: Last Modified January ___________, 2014
- */
+// LowestGrade.java, unit 5.1.6
 
+/** 
+ *  This class contains the method removeLowest, which takes a variable number of 
+ *	integer arguments and returns an array with the lowest integer removed.
+ *	It also contains the method arrayPrint, which  accepts an array of integers 
+ *	and prints it out as a string. 
+ *
+ *  @author:  Anna Ntenta, anna.ntenta@gmail.com
+ *  @version: Last Modified February 17, 2014
+ */
 
 import java.util.*;
 
@@ -111,6 +115,7 @@ private static String arrayPrint (int [] arr)
 
 public static void main (String [] args)
 	{
+		// tests
 		int [] a = removeLowest ( 23, 90, 47, 55, 88);
 	 	int [] b = removeLowest ( 85);
 	 	int [] c = removeLowest ();

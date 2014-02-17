@@ -31,6 +31,10 @@ class Prob3
         case FEB:
         	numDays = 28;
         	break;
+
+        default:
+                System.out.println("Invalid month.");
+                break;
  		}	
  		return numDays;
  	}

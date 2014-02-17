@@ -1,14 +1,26 @@
-/** Binomial.java
- *  Unit 5.1.10
+// Binomial.java, unit 5.1.10
+
+/** 
+ *  This class contains the method binomial, which takes two integers, n and k, 
+ *  as arguments and calculates their binomial coefficient. It also prints the 
+ *  first n rows of Pascal's Triangle.
  *
- *  @author:  Anna Ntenta
- *  @version: Last Modified February 14, 2014
+ *  @author:  Anna Ntenta, anna.ntenta@gmail.com
+ *  @version: Last Modified February 17, 2014
  */
 
 import java.util.*;
 
 class Binomial
 {
+	/**
+    * This method takes two integers as arguments and returns their binomial 
+ 	* coefficient.
+    *
+    * @param   n  		An integer >= 0
+    * @param   k  		An integer >= 0
+    * @return  C(n,k)	Binomial coefficient
+    */	
 	public static int binomial(int n, int k)
 	{
 		// base case #1
@@ -49,8 +61,11 @@ class Binomial
 			}
 			// error message if n < 0
 			else {
-				System.out.println ("Please start over and give us an integer >= 0. ");
+				System.out.println ("\nPlease start over and give us an integer >= 0.\n");
 			}
+		}
+		else {
+				System.out.println ("\nThat's not an integer. Please start over.\n");
 		}
 	}
 }

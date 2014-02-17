@@ -1,5 +1,2 @@
-this
-is
-a 
-test
-no?
+this is a test
+no!

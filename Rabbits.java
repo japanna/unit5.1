@@ -1,15 +1,24 @@
-/** Rabbits.java
- *  unit 5.1.7
- *  
- *  @author:  Anna Ntenta
- *  @version: Last Modified February 14, 2014
- */
+// Rabbits.java, unit 5.1.7
 
+/**
+ *  This class contains the method fibo, which takes one argument (a 
+ *  number), and returns the n'th Fibonacci number.
+ *
+ *  @author:  Anna Ntenta, anna.ntenta@gmail.com
+ *  @version: Last Modified February 17, 2014
+ */
 
 import java.util.*;
 
 class Rabbits
 {
+	/**
+    * This method takes an integer as argument and returns the n'th 
+    * Fibonacci number
+    *
+    * @param   n  	An integer
+    * @return  fib	The n'th Fibonacci number
+    */
 	public static int fibo (int n)
 	{
 		// base case #1
