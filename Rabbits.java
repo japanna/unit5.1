@@ -10,7 +10,7 @@
 
 import java.util.*;
 
-class Rabbits
+public class Rabbits
 {
 	/**
     * This method takes an integer as argument and returns the n'th 

@@ -11,7 +11,7 @@
 
 import java.util.*;
 
-class Binomial
+public class Binomial
 {
 	/**
     * This method takes two integers as arguments and returns their binomial 

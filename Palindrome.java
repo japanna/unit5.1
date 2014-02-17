@@ -16,7 +16,7 @@
 
 import java.util.*;
 
-class Palindrome
+public class Palindrome
 {
 
 /**

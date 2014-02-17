@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-class LowestGrade
+public class LowestGrade
 {
 
 /** 

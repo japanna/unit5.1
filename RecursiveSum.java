@@ -11,7 +11,7 @@
 
 import java.util.*;
 
-class RecursiveSum 
+public class RecursiveSum 
 {
 	/**
     * This method takes an array of integers and the size of the array as input 
