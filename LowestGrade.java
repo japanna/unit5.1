@@ -24,7 +24,7 @@ public class LowestGrade
  *  @return  highScores  An array that contains all of the values 
  *						 passed to the method EXCEPT for the lowest score.
  */
-private static int [] removeLowest (int... args)
+public static int [] removeLowest (int... args)
 	{
 		// if the method is given no arguments
 		if (args.length == 0)
